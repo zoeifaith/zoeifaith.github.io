@@ -6,14 +6,7 @@
     rgb(248,238,231) =cream
 */
 
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Josefin+Slab|Patua+One|Cinzel');
-
-@font-face {
-  font-family: 'Typewriter';
-  src: url('Kingthings Typewriter.TTF') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Josefin+Slab|Patua+One|Cinzel|Special+Elite');
 
 html, body, aside {
     min-height:100%;
