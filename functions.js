@@ -1,7 +1,7 @@
 var i = 0;
 function typeWriter() {
-    var text = "Hello World!";
-    var speed = 150;
+    var text = "Welcome to My eResume!";
+    var speed = 135;
     if(i < text.length) {
         if(i == 0) {  
             document.getElementById("text").innerHTML = " ";

@@ -15,10 +15,10 @@
     <body style="max-height:100%; max-width:100%; overflow:hidden;">
         <h1 style="font-weight:bold; position:absolute; z-index:1; top:25%; left:15%;">Oops</h1>
         <h2 style="grid-column:2; position:absolute; z-index:1; top:35%; left:15%;">This page is currently under reconstruction. Please check back soon!</h2>
-        <canvas id="canv" style="background-color:white; border-style:inset;"></canvas>
+        <canvas id="canv" style="background-color:white; border-style:inset; left:5%; right:50%;"></canvas>
         <script>
             var canvas = document.getElementById("canv");
-            canvas.width = window.innerWidth;
+            canvas.width = window.innerWidth - 25;
             canvas.height = window.innerHeight;
             var ctx = canvas.getContext("2d");
             var radius = 80;

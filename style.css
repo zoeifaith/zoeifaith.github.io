@@ -6,7 +6,7 @@
     rgb(248,238,231) =cream
 */
 
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Josefin+Slab|Patua+One');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Josefin+Slab|Patua+One|Cinzel');
 
 @font-face {
   font-family: 'Typewriter';
@@ -35,6 +35,7 @@ body {
         linear-gradient(127deg, rgba(40,88,103,1), rgba(60,108,123,0.25) 60%),
         linear-gradient(217deg, rgba(40,88,103,1), rgba(60,108,123,0.25) 60%),
         linear-gradient(327deg, rgba(40,88,103,1), rgba(60,108,123,0.25) 60%);
+    overflow:hidden;
 }
 
 #dropbtn {
@@ -42,8 +43,8 @@ body {
     border:none;
     color:white;
     position:absolute;
-    right:0px;
-    top:0px;
+    right:0;
+    top:0;
 }
 
 #button {
@@ -58,7 +59,8 @@ body {
 .dropdown:hover .nav {
     display:block;
     color:black;
-    font-family:"Josefin Slab";
+    font-family:"Cinzel";
+    font-size:90%;
 }
 
 .dropdown:hover .nav:hover { 
@@ -73,8 +75,8 @@ body {
     height:0;
     z-index:1;
     text-align:center;
-    left:0px;
-    right:0px;
+    left:0;
+    right:0;
 }
 
 .dropdown:hover #dropbtn {
@@ -84,7 +86,7 @@ body {
 
 .dropdown:hover #menu {
     position:absolute;
-    top:0px;
+    top:0;
     bottom:25%;
     height:auto;
     z-index:10;
@@ -95,6 +97,7 @@ body {
     background:rgba(211,211,211,0.98);
     grid-template-rows:1fr 1fr 1fr 1fr;
     transition: all 0.25s ease;
+    overflow:hidden;
 }
 
 hr {
@@ -105,7 +108,7 @@ hr {
 
 .dropdown:hover #home {
     grid-row:1;
-    margin-top:10px;
+    margin-top:1%;
 }
 
 .dropdown:hover #about {
@@ -118,8 +121,8 @@ hr {
 }
 
 .dropdown:hover #contact {
-    padding-top:5px;
-    margin-top:0px;
+    padding-top:2%;
+    margin-top:0;
     grid-row:4;
     color:rgb(40,40,40);
 }

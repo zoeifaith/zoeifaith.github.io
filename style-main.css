@@ -1,14 +1,15 @@
-h3 {
-    margin-top:0px;
-}
-
 body {
     display:grid;
-    grid-template-rows:auto auto auto; 
+    grid-template-rows:auto 1fr; 
 }
 
-#content div:hover {
-    box-shadow: 0px 0px 5px 3px rgba(255,255,255,0.25);
+.contact a {
+    text-decoration:underline;
+    color:black;
+}
+
+.education:hover, .work:hover, .activities:hover {
+    box-shadow: 0 0 0.25em 0.15em rgba(255,255,255,0.25);
 }
 
 .intro {
@@ -16,84 +17,84 @@ body {
 }
 
 #content {
-    grid-row:3;
+    grid-row:2;
     display:grid;
-    margin-left:10px;
-    margin-right:10px;
+    margin-left:0.5%;
+    margin-right:0.5%;
+    margin-top:0.25%;
+    margin-bottom:0.25%;
     grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:1fr 1f 1fr;
-    font-family:"Barlow Condensed";
+    grid-template-rows:1fr 1f 1fr 1fr;
+    font-family:"Josefin Slab";
+    font-size:110%;
+    margin-top:2%;
 }
 
 #content h3 {
-    font-family:"Patua One";
+    font-family:"Barlow Condensed";
+    font-weight:bold;
+     margin-top:0;
+    font-size:150%;
 }
 
-
 #content div {
-    padding:10px;
-    margin:10px;
     text-align:center;
     background:rgba(86,127,120,0.9);
-    border-radius:3px;
-    border-width:;
+    border-radius:8px;
     border-style:solid;
     border-color:rgba(211,211,211,0.75);
-    
-    margin-bottom:25px;
+    margin:0.75%;
 }
 
     #content .education {
         grid-column:1/span 2;
-        margin-bottom:0px;
-        grid-row:1; 
+        grid-row:1;
+        padding:2%;
+        margin-left:0.5%;
     } 
     #content .work {
-        padding-top:25%;
-        padding-bottom:25%;
-        margin-bottom:0px;
-        margin-left:0px;
         grid-column:3;
         grid-row:1/span 2;
+        padding:15%;
+        padding-top:20%;
+        margin-right:0.5%;
     } 
     #content .activities {
-        padding-top:25%;
-        padding-bottom:25%;
         grid-column:1;
         grid-row:2/span 2;
+        padding:15%;
+        padding-top:18%;
+        margin-left:0.5%;
     } 
     #content .experience {
-        padding-top:10%;
-        padding-bottom:10%;
         grid-column:2;
         grid-row:2/span 2;
-        margin-left:0px;
+        padding:5%;
     } 
     #content .skills {
         grid-column:3;
         grid-row:3;
-        margin-left:0px;
+        padding:5%;
+        margin-right:0.5%;
     } 
+    #content .contact {
+        grid-row:4;
+        grid-column:1/span 3;
+        padding:2%;
+        margin-top:0.375%;
+        margin-left:0.5%;
+        margin-right:0.5%;
+    }
 
 #message {
-    margin-top:-10px;
-    margin-left:-10px;
-    margin-right:-10px;
-    padding-left:10px;
+    margin-top:-1%;
+    margin-left:-1%;
+    margin-right:-1%;
+    padding-left:1%;
+    padding-bottom:0;
     grid-row:1;
     color:black;
     background: rgba(202,228,216,0.75);
-    box-shadow: 0px 0px 0.15px 2px rgba(191, 185, 188,0.75);
+    box-shadow: 0 0 0.25pem 2em rgba(191, 185, 188,0.75);
     font-family:"Typewriter";
-}
-
-#welcome {
-    text-align:center;
-    padding-top:2%;
-    padding-bottom:2%;
-    color:black;
-    font-size:20px;
-    text-decoration:underline;
-    grid-row:2;
-    font-family:"Patua One";
 }
