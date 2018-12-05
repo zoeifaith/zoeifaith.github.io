@@ -1,0 +1,125 @@
+/* Colors:
+    rgb(220,174,29) =yellow
+    rgb(202,228,216) =light blue
+    rgb(86,127,120) =medium blue
+    rgb(0,48,63) =dark blue
+    rgb(248,238,231) =cream
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Josefin+Slab|Patua+One');
+
+@font-face {
+  font-family: 'Typewriter';
+  src: url('Kingthings Typewriter.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, aside {
+    min-height:100%;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration:none;
+}
+
+body {
+    max-width:100%;
+    color:black;
+    background:
+        linear-gradient(37deg, rgba(40,88,103,1), rgba(60,108,123,0.25) 60%), 
+        linear-gradient(127deg, rgba(40,88,103,1), rgba(60,108,123,0.25) 60%),
+        linear-gradient(217deg, rgba(40,88,103,1), rgba(60,108,123,0.25) 60%),
+        linear-gradient(327deg, rgba(40,88,103,1), rgba(60,108,123,0.25) 60%);
+}
+
+#dropbtn {
+    background: rgba(202,228,216,0.75);
+    border:none;
+    color:white;
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+
+#button {
+    grid-row:1;
+    grid-column:1;
+}
+
+.nav {
+    display:none;
+}
+
+.dropdown:hover .nav {
+    display:block;
+    color:black;
+    font-family:"Josefin Slab";
+}
+
+.dropdown:hover .nav:hover { 
+    color:rgba(123,122,127,0.75);
+}
+
+#contact:hover {
+    color:rgb(40,40,40);
+}
+
+#menu {
+    height:0;
+    z-index:1;
+    text-align:center;
+    left:0px;
+    right:0px;
+}
+
+.dropdown:hover #dropbtn {
+    display:none;
+    z-index:1;
+}
+
+.dropdown:hover #menu {
+    position:absolute;
+    top:0px;
+    bottom:25%;
+    height:auto;
+    z-index:10;
+    color:rgb(40,40,40);
+    text-align:center;
+    display:grid;
+    padding:auto;
+    background:rgba(211,211,211,0.98);
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    transition: all 0.25s ease;
+}
+
+hr {
+    width:15%;
+    margin-top:6%;
+    font-weight:normal;
+}
+
+.dropdown:hover #home {
+    grid-row:1;
+    margin-top:10px;
+}
+
+.dropdown:hover #about {
+    grid-row:2;
+    
+}
+
+.dropdown:hover #projects {
+    grid-row:3;
+}
+
+.dropdown:hover #contact {
+    padding-top:5px;
+    margin-top:0px;
+    grid-row:4;
+    color:rgb(40,40,40);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorry!</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+     </head>
+    <div class="dropdown">
+        
+        <div id="button"><button id="dropbtn">...</button></div>
+        <div id="menu">
+            <a href="index.html" class="nav" id="home"><h4>Home<hr></h4></a><a href="sorry.html" class="nav" id="about"><h4>About Zoei<hr></h4></a><a href="sorry.html" class="nav" id="projects"><h4>Projects</h4></a><div class="nav" id="contact"><h4>Contact<br><br>
+            Phone: 1-(262)-490-6455<br>Email: <a href="mailto:faith@wisc.edu">faith@wisc.edu</a></h4></div>
+        </div>
+    </div>
+    <body style="max-height:100%; max-width:100%; overflow:hidden;">
+        <h1 style="font-weight:bold; position:absolute; z-index:1; top:25%; left:15%;">Oops</h1>
+        <h2 style="grid-column:2; position:absolute; z-index:1; top:35%; left:15%;">This page is currently under reconstruction. Please check back soon!</h2>
+        <canvas id="canv" style="background-color:white; border-style:inset;"></canvas>
+        <script>
+            var canvas = document.getElementById("canv");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            var ctx = canvas.getContext("2d");
+            var radius = 80;
+            var x = canvas.width/2;
+            var y = canvas.height - radius;
+            var dx = 1;
+            var dy = -1;
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.beginPath();
+                ctx.rect(x,y,radius,radius);;
+                ctx.fillStyle = "red";
+                ctx.fill();
+                ctx.closePath();
+                if(x + dx > canvas.width - radius || x + dx < 0) {
+                    dx = -dx;
+                }
+                if(y + dy > canvas.height - radius || y + dy < 0) {
+                    dy = -dy;
+                }
+                x += dx;
+                y += dy;
+            }
+            setInterval(draw, 9);
+        </script>
+    </body>
+</html>
