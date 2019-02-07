@@ -1,22 +1,22 @@
 body {
     display:grid;
-    grid-template-rows:auto 1fr; 
+    grid-template-rows:auto 1fr;
 }
 
-.contact a {
+#contact a {
     text-decoration:underline;
     color:black;
 }
 
-.education:hover, .work:hover, .activities:hover {
+#education:hover, #work:hover, #activities:hover {
     box-shadow: 0 0 0.25em 0.15em rgba(255,255,255,0.25);
 }
 
-.intro {
-    grid-column:2;
+#education h3, #work h3, #activities h3 {
+    text-decoration:underline;
 }
 
-#content {
+.content {
     grid-row:2;
     display:grid;
     margin-left:0.5%;
@@ -30,14 +30,14 @@ body {
     margin-top:2%;
 }
 
-#content h3 {
+.content h3 {
     font-family:"Barlow Condensed";
     font-weight:bold;
-     margin-top:0;
+    margin-top:0;
     font-size:150%;
 }
 
-#content div {
+.content div {
     text-align:center;
     background:rgba(86,127,120,0.9);
     border-radius:8px;
@@ -46,38 +46,38 @@ body {
     margin:0.75%;
 }
 
-    #content .education {
+    .content #education {
         grid-column:1/span 2;
         grid-row:1;
         padding:2%;
         margin-left:0.5%;
     } 
-    #content .work {
+    .content #work {
         grid-column:3;
         grid-row:1/span 2;
         padding:15%;
         padding-top:20%;
         margin-right:0.5%;
     } 
-    #content .activities {
-        grid-column:1;
+    .content #activities {
+        grid-column:2;
         grid-row:2/span 2;
         padding:15%;
         padding-top:18%;
         margin-left:0.5%;
     } 
-    #content .experience {
-        grid-column:2;
+    .content #experience {
+        grid-column:1;
         grid-row:2/span 2;
         padding:5%;
     } 
-    #content .skills {
+    .content #skills {
         grid-column:3;
         grid-row:3;
         padding:5%;
         margin-right:0.5%;
     } 
-    #content .contact {
+    .content #contact {
         grid-row:4;
         grid-column:1/span 3;
         padding:2%;

@@ -1,0 +1,12 @@
+header {
+    margin-top:-1%;
+    margin-left:-1%;
+    margin-right:-1%;
+    padding-left:1%;
+    padding-bottom:0;
+    grid-row:1;
+    color:black;
+    background: rgba(202,228,216,0.75);
+    box-shadow: 0 0 0.25pem 2em rgba(191, 185, 188,0.75);
+    font-family:"Special Elite";
+}
