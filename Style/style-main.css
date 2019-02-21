@@ -27,7 +27,6 @@ body {
     grid-template-rows:1fr 1f 1fr 1fr;
     font-family:"Josefin Slab";
     font-size:110%;
-    margin-top:2%;
 }
 
 .content h3 {

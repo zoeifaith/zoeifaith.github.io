@@ -14,6 +14,7 @@
 
 html, body, aside {
     height:100%;
+    top:0;
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
@@ -70,20 +71,17 @@ body {
     font-size:90%;
 }
 
-.dropdown:hover .nav:hover { 
+.dropdown:hover .nav:hover {
     color:rgba(123,122,127,0.75);
-}
 
-#contactInfo:hover {
-    color:rgb(40,40,40);
 }
 
 #menu {
-    height:0;
+    height:100%;
     z-index:1;
     text-align:center;
-    left:0;
     right:0;
+    width:25%;
 }
 
 .dropdown:hover #dropbtn {
@@ -95,16 +93,16 @@ body {
     position:absolute;
     top:0;
     bottom:25%;
-    height:auto;
     z-index:10;
     color:rgb(40,40,40);
     text-align:center;
     display:grid;
     padding:auto;
-    background:linear-gradient(to bottom, rgba(225,225,225, 0.99), rgba(185,185,185, 0.99) 100%);
+    background:linear-gradient(to bottom, rgba(225,225,225, 0.95), rgba(185,185,185, 0.95) 100%);
     grid-template-rows:1fr 1fr 1fr 1fr;
     transition: all 0.25s ease;
     overflow:hidden;
+    right:0;
 }
 
 #menu h3 {
@@ -137,9 +135,24 @@ hr {
     margin-top:1%;
 }
 
-.dropdown:hover #contactInfo {
+.dropdown:hover {
     padding-top:1%;
     margin-top:0;
     grid-row:4;
     color:rgb(40,40,40);
+}
+
+#contactInfo {
+    padding-top:1%;
+    margin-top:0;
+    grid-row:4;
+    color:rgb(0,0,0);
+    font-weight:bold;
+}
+
+#contactInfo hr {
+    width:75%;
+    margin-top:0;
+    padding-top:0;
+    margin-bottom:25%;
 }
