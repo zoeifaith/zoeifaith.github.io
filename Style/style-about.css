@@ -1,0 +1,144 @@
+header {
+    margin-top:-1%;
+    margin-left:-1%;
+    margin-right:-1%;
+    padding-left:1%;
+    padding-bottom:0;
+    grid-row:1;
+    color:black;
+    background: rgba(202,228,216,0.75);
+    box-shadow: 0 0 0.25pem 2em rgba(191, 185, 188,0.75);
+    font-family:"Special Elite";
+}
+
+img {
+    box-sizing:border-box;
+    margin-right:auto;
+    margin-left:auto;
+    border-radius:25px;
+    border-style:solid;
+    border-width:5px;
+    padding:1px;
+    border-color:rgba(248,238,231, 0.5);
+    display:inline-block;
+}
+
+.content {
+    display:grid;
+    grid-template-rows:auto auto;
+    grid-template-columns:150px 100px 335px auto;
+    margin-left:0.5%;
+    margin-right:0.5%;
+    margin-top:0.25%;
+    margin-bottom:0.25%;
+    font-family:"Josefin Slab";
+    font-size:110%;
+}
+
+.content div {
+    background:rgba(86,127,120,0.9);
+    border-radius:8px;
+    border-style:solid;
+    border-color:rgba(248,238,231, 0.65);
+    margin:0.5%;
+    padding:1%;
+}
+
+#intro {
+    grid-column:1/span 4;
+    grid-row:1;
+    line-height:1.5;
+    font-family:"Indie Flower";
+    font-size:25px;
+}
+
+#mypics {
+    grid-row:2;
+    grid-column:3;
+    background-color:inherit;
+    border:none;
+}
+
+#mypics img {
+    max-height:200px;
+}
+
+#sports {
+    grid-row:2;
+    grid-column:1;
+    background-color:inherit;
+    border:none;
+    color:white;
+    text-decoration:underline;
+    font-family:"Indie Flower";
+}
+
+#captions {
+    grid-row:2;
+    grid-column:2;
+    background-color:inherit;
+    border:none;
+    padding-left:10%;
+    display:grid;
+    grid-template-rows:0.5fr 1fr 1fr 1fr;
+    color:white;
+    line-height:1.5;
+    font-family:"Indie Flower";
+}
+
+
+#facts {
+    grid-row:2;
+    grid-column:4;
+    margin-top:1%;
+    line-height:2;
+    font-size:23px;
+    font-family:"Indie Flower";
+}
+
+#facts ul {
+    margin:0;
+    font-size:25px;
+}
+
+#facts h3 {
+    text-align:center;
+    font-size:30px;
+    margin-top:3%;
+    margin-bottom:0;
+    font-family:Margarine;
+}
+
+#btn {
+    margin-left:30px;
+}
+
+#leafs {
+    height:105px;
+    margin-top:2%
+}
+
+#camp {
+    height:91px;
+    margin-top:10%;
+}
+
+#pack {
+    height:97px;
+    margin-top:10%;
+}
+
+#tml {
+    grid-row:2;
+}
+
+#gpg {
+    grid-row:3;
+}
+
+#onw {
+    grid-row:4;
+}
+
+
+

@@ -8,18 +8,20 @@
         
         <div id="button"><button id="dropbtn"><p>_______<br>_______<br>_______</p></button></div>
         <div id="menu">
-            <a href="../index.html" class="nav" id="home"><h4>Home</h4></a><a href="sorry.html" class="nav" id="about"><h4>About Zoei</h4></a><a href="sorry.html" class="nav" id="projects"><h4>Projects</h4></a><div class="nav" id="contact"><hr><h4>Contact<br><br>
+            <a href="../index.html" class="nav" id="home"><h4>Home</h4></a><a href="aout.html" class="nav" id="about"><h4>About Zoei</h4></a><a href="sorry.html" class="nav" id="projects"><h4>Projects</h4></a><div class="nav" id="contact"><hr><h4>Contact<br><br>
             Phone: 1-(262)-490-6455<br>Email: <a href="mailto:faith@wisc.edu">faith@wisc.edu</a></h4></div>
         </div>
     </div>
-    <body style="max-height:100%; max-width:100%; overflow:hidden;">
-        <h1 style="font-weight:bold; position:absolute; z-index:1; top:25%; left:15%;">Oops</h1>
-        <h2 style="grid-column:2; position:absolute; z-index:1; top:35%; left:15%;">This page is currently under reconstruction. Please check back soon!</h2>
-        <canvas id="canv" style="background-color:white; border-style:inset; left:5%; right:50%;"></canvas>
+    <body style="max-height:100%; max-width:100%; overflow:hidden; display:grid; grif-rows:auto 1fr;">
+        <div style="grid-row:2;">
+            <h1 style="font-weight:bold; position:absolute; z-index:1; top:25%; left:15%;">Oops</h1>
+            <h2 style="grid-column:2; position:absolute; z-index:1; top:35%; left:15%;">This page is currently under reconstruction. Please check back soon!</h2>
+            <canvas id="canv" style="background-color:white; margin-top:5%; border-style:inset; left:5%; right:50%;"></canvas>
+        </div>
         <script>
             var canvas = document.getElementById("canv");
-            canvas.width = window.innerWidth - 25;
-            canvas.height = window.innerHeight;
+            canvas.width = 0.935 * window.innerWidth;
+            canvas.height = 0.85 * window.innerHeight;
             var ctx = canvas.getContext("2d");
             var radius = 80;
             var x = canvas.width/2;
