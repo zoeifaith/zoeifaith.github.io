@@ -55,7 +55,7 @@ img {
 #mypics {
     grid-row:2;
     grid-column:3;
-    margin-top:2%;
+    margin-top:6%;
     background-color:inherit;
     border:none;
 }
