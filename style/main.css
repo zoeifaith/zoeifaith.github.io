@@ -1,0 +1,160 @@
+* {
+  overflow:hidden;
+}
+
+body {
+  padding:0;
+  margin:0;
+  height:100%;
+  width:100%;
+  display:grid;
+  grid-template-rows:8% 86% 6%;
+}
+
+header {
+  grid-row:1;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  background-color:black;
+  color:rgba(250,250,250,0.8);
+  padding-left:3%;
+}
+
+a, p {
+  color:rgba(200,200,200,0.8);
+  text-decoration:none;
+}
+
+h1{
+  grid-row:2;
+  color:black;
+  background-color:rgba(255,255,255,0.5);
+  border-radius:3%;
+  position:absolute;
+  top:21%;
+  left:38%;
+  font-size:40px;
+  padding:0.75%;
+  padding-bottom:0.25%;
+}
+
+h2 {
+  grid-column:1;
+  margin-bottom:0;
+  margin-top:12%;
+}
+
+h3 {
+  grid-column:1;
+  padding-left:25%;
+  margin-top:3%;
+  margin-bottom:0;
+}
+
+nav {
+  grid-column:2;
+  display:grid;
+  margin-left:5%;
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+nav a {
+  text-align:center;
+  padding-top:5%;
+}
+
+nav a:hover:not(#work):not(#education):not(#projects), .dropdown:hover{
+  background-color:rgba(100,100,100,0.5);
+}
+
+footer {
+  grid-row:3;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  background-color:black;
+  color:rgba(250,250,250,0.8);
+  padding-left:2%;
+}
+
+footer p {
+  margin-top:3.5%;
+  margin-bottom:0;
+}
+
+footer a:hover {
+  text-decoration:underline;
+}
+
+main {
+  background-image:url("../files/kayaking1.JPG");
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+}
+
+.tabbed {
+  padding-left:2%;
+}
+
+.dropContent {
+  display:none;
+}
+
+.dropdown {
+  grid-column:3;
+  text-align:center;
+  padding-top:5%;
+}
+
+.dropdown:hover .dropContent {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+}
+
+.dropdown:hover #experience {
+  display:none;
+}
+
+.dropdown:hover #work {
+  grid-column:1;
+}
+
+.dropdown:hover #education {
+  grid-column:2;
+}
+
+.dropdown:hover #projects {
+  grid-column:3;
+}
+
+#home {
+  grid-column:1;
+}
+
+#about {
+  grid-column:2;
+}
+
+#work:hover {
+  color:white;
+}
+
+#education:hover {
+  color:white;
+}
+
+#projects:hover {
+  color:white;
+}
+
+#email {
+  grid-column:2;
+}
+
+#phone {
+  grid-column:3;
+}
+
+#linkedin {
+  grid-column:4;
+}
