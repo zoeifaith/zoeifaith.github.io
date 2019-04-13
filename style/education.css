@@ -1,0 +1,120 @@
+body {
+  background-image:linear-gradient(to bottom,white,rgb(170,170,170));
+  grid-template-rows:100% 100% 1fr;
+}
+
+footer {
+  grid-row:3;
+}
+
+main {
+  display:grid;
+  grid-template-rows:auto auto 1fr;
+  grid-template-columns:1fr 1fr;
+}
+
+.classList {
+  margin-left:2%;
+  margin-right:3%;
+  font-size:20px;
+  line-height:2.5;
+}
+
+.descriptor {
+  font-size:16px;
+  line-height:1.75;
+}
+
+.picPage {
+  grid-row:1;
+  background-image:url("../files/uwlogo.png");
+  background-repeat:no-repeat;
+  background-size:40%;
+  background-position:90%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.arrow {
+  grid-column:1/span 2;
+  grid-row:1;
+  margin-top:2%;
+  margin-bottom:0;
+  font-size:75px;
+  text-align:center;
+  font-family:"Cinzel";
+}
+
+.arrow a, #classLink{
+  color:rgba(50,50,50,0.8);
+}
+
+.arrow a:hover, #classLink:hover{
+  color:rgb(50,50,50);
+}
+
+#content h4 {
+  border:3px solid rgb(50,50,50);
+  font-size:20px;
+  border-radius:10px;
+  text-align:center;
+  margin:0 28% 0 28%;
+  padding:4%;
+  color:rgb(50,50,50);
+  background-color:rgba(220,220,220,0.7);
+}
+
+#profile p, #classLink {
+  grid-column:1;
+  font-size:18px;
+  line-height:2;
+  text-align:center;
+  font-family:"PT Sans Caption";
+  color:rgba(50,50,50,0.8);
+}
+
+#me {
+  border:6px solid rgb(193,0,3);
+  margin-top:25%;
+  margin-left:31%;
+  height:250px;
+  border-radius:50%;
+}
+
+#content {
+  grid-row:2;
+  font-family:"PT Sans Caption";
+  background-image:linear-gradient(to top,white,rgb(170,170,170));
+}
+
+#ee {
+  grid-row:2;
+  grid-column:1;
+}
+
+#cs {
+  grid-row:2;
+  grid-column:2;
+}
+
+#eclass {
+  grid-row:3;
+  grid-column:1;
+}
+
+#csclass {
+  grid-row:3;
+  grid-column:2;
+}
+
+#classLink {
+  background-color:rgba(200,200,200,0.7);
+  border:1px solid rgb(193,0,3);
+  border-radius:15px;
+  padding:1%;
+  margin-left:20%;
+  margin-right:20%;
+  margin-top:15%;
+  margin-bottom:8%;
+  font-size:15px;
+}

@@ -1,0 +1,33 @@
+* {
+  overflow:hidden;
+}
+h1 {
+  color:rgba(255,255,255,0.9);
+  position:relative;
+  text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+  top:85%;
+  left:3%;
+  font-size:40px;
+  font-family:"Kaushan Script";
+  font-weight:normal;
+}
+
+main {
+  background-image:url("../files/kayaking1.JPG");
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+  grid-row:1;
+}
+
+body {
+  grid-template-rows:94% 1fr;
+}
+
+footer {
+  grid-row:2;
+}
