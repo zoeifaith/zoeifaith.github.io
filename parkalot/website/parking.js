@@ -14,9 +14,9 @@ class ParkingLot {
         this.polygon = new google.maps.Polygon({
             paths: this.corners,
             fillColor: '#4F4F4F',
-            fillOpacity: .6,
+            fillOpacity: 0.6,
             strokeWeight: 5,
-            fillOpacity: 0.4
+            zIndex: 1
         });
         this.polygon.setMap(map);
         this.spots.forEach((spot) => {
