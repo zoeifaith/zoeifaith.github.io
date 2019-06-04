@@ -222,7 +222,7 @@ footer a:hover {
         grid-template-rows:10% repeat(3,20%);
     }
     
-    #slide-btn:hover + #slide, #slide:hover, #slide-btn:active + #slide, #slide:active {
+    #slide-btn:hover + #slide, #slide:hover {
         right:0;
     }
     
@@ -235,24 +235,24 @@ footer a:hover {
       text-align:center;
     }
 
-    .dropdown-mobile:hover .dropContent-mobile, .dropdown-mobile:active .dropContent-mobile {
+    .dropdown-mobile:hover .dropContent-mobile {
       display:grid;
       grid-template-rows:repeat(3,1fr);
     }
 
-    .dropdown-mobile:hover #experience-mobile, .dropdown-mobile:active #experience-mobile {
+    .dropdown-mobile:hover #experience-mobile {
       display:none;
     }
 
-    .dropdown-mobile:hover #work-mobile, .dropdown-mobile:active #work-mobile {
+    .dropdown-mobile:hover #work-mobile {
       grid-row:1;
     }
 
-    .dropdown-mobile:hover #education-mobile, .dropdown-mobile:active #education-mobile {
+    .dropdown-mobile:hover #education-mobile {
       grid-row:2;
     }
 
-    .dropdown-mobile:hover #projects-mobile, .dropdown-mobile:active #projects-mobile {
+    .dropdown-mobile:hover #projects-mobile {
       grid-row:3;
     }
 
@@ -260,7 +260,7 @@ footer a:hover {
       grid-row:2;
     }
     
-    #home-mobile:hover, #home-mobile:active {
+    #home-mobile:hover {
       color:white;
     }
 
@@ -268,19 +268,19 @@ footer a:hover {
       grid-row:3;
     }
     
-    #about-mobile:hover, #about-mobile:active {
+    #about-mobile:hover {
       color:white;
     }
     
-    #work-mobile:hover, #work-mobile:active {
+    #work-mobile:hover {
       color:white;
     }
 
-    #education-mobile:hover, #education-mobile:active {
+    #education-mobile:hover {
       color:white;
     }
 
-    #projects-mobile:hover, #projects-mobile:active {
+    #projects-mobile:hover {
       color:white;
     }
 
