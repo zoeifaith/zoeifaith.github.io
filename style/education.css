@@ -3,10 +3,6 @@ body {
   grid-template-rows:100% 100% 1fr;
 }
 
-footer {
-  grid-row:3;
-}
-
 main {
   display:grid;
   grid-template-rows:auto auto 1fr;

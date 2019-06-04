@@ -3,10 +3,6 @@ body {
   grid-template-rows: 100% 100% 100% 1fr;
 }
 
-footer {
-  grid-row:4;
-}
-
 .arrow {
   margin-top:5%;
   margin-bottom:0;

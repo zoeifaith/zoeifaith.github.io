@@ -3,15 +3,16 @@
 }
 h1 {
   color:rgba(255,255,255,0.9);
-  position:relative;
+  position:fixed;
   text-shadow:
 		-1px -1px 0 black,
 		1px -1px 0 black,
 		-1px 1px 0 black,
 		1px 1px 0 black;
-  top:85%;
+  bottom:5%;
   left:3%;
-  font-size:40px;
+  margin-right:3%;
+  font-size:250%;
   font-family:"Kaushan Script";
   font-weight:normal;
 }
@@ -21,13 +22,11 @@ main {
   background-size:cover;
   background-attachment:fixed;
   background-position:center;
-  grid-row:1;
 }
 
-body {
-  grid-template-rows:94% 1fr;
+@media only screen and (max-width: 700px) {
+    h1 {
+        display:none;
+    }   
 }
 
-footer {
-  grid-row:2;
-}

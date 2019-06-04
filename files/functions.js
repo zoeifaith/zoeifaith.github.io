@@ -23,3 +23,4 @@ function typeWriter() {
         setTimeout(typeWriter, speed);           document.getElementById("text").innerHTML += text.charAt(i);         ++i;
     }
 }
+

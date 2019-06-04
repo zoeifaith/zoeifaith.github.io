@@ -19,6 +19,7 @@ body {
   padding:0;
   margin:0;
   display:grid;
+  grid-template-rows:50px 1fr 50px;
 }
 
 header {
@@ -31,8 +32,12 @@ header {
   text-transform:uppercase;
   position:fixed;
   top:0;
-  height:8%;
+  height:50px;
   width:100%;
+}
+
+main {
+  grid-row:2;
 }
 
 nav a, footer a {
@@ -43,6 +48,7 @@ header h2 {
   grid-column:1;
   margin-bottom:0;
   margin-top:12%;
+  font-size:150%;
 }
 
 footer h3 {
@@ -65,17 +71,22 @@ nav a {
   padding-top:4%;
 }
 
-nav a:hover:not(#work):not(#education):not(#projects), .dropdown:hover{
+nav a:hover:not(#work):not(#education):not(#projects):not(#home-mobile):not(#about-mobile), .dropdown:hover{
   background-color:rgba(100,100,100,0.5);
 }
 
 footer {
   display:grid;
+  position:fixed;
   grid-template-columns:repeat(4,1fr);
   background-color:black;
   color:rgba(250,250,250,0.8);
   padding-left:2%;
   font-family:"Open Sans Condensed";
+  height:50px;
+  width:100%;
+  bottom:0;
+  
 }
 
 footer p {
@@ -153,3 +164,127 @@ footer a:hover {
 #linkedin {
   grid-column:4;
 }
+
+#mobile-link {
+    display:none;
+}
+.mobile {
+    display:none;
+}
+
+@media only screen and (max-width: 700px) {
+    nav > *:not(.mobile) {
+        display: none;
+    }
+    nav {
+        grid-template-columns: 1fr 100px;
+    }
+    footer p, #descriptor {
+        display: none;
+    }
+    #mobile-link {
+        display:inline-block;
+        grid-column:1/span 4;
+        color:rgba(250,250,250,0.8);
+        margin:auto;
+    }
+    #mobile-link h3 {
+        padding:0;
+    } 
+    .mobile {
+        display:inline-block;
+        background-color:inherit;
+        color:white;
+    }
+    #slide-btn {
+        grid-column:2;
+        height:50px;
+        border-style:none;
+        padding-left:40px;
+        padding-right:10px;
+    }
+    #menu-icon {
+        height:50px;
+    }
+    #slide {
+        position: fixed;
+        top:50px;
+        right: -225px;
+        height:100%;
+        width: 200px;
+        background-color: rgba(0,0,0,0.85);
+        color:rgba(200,200,200,0.8);
+        padding: 0.5em 0.5em 0.5em 2.5em;
+        transition: 1.5s;
+        z-index:10;
+        font-size:125%;
+        display:grid;
+        grid-template-rows:10% repeat(3,20%);
+    }
+    
+    #slide-btn:hover + #slide, #slide:hover {
+        right:0;
+    }
+    
+    .dropContent-mobile {
+      display:none;
+    }
+
+    .dropdown-mobile {
+      grid-row:4;
+      text-align:center;
+    }
+
+    .dropdown-mobile:hover .dropContent-mobile {
+      display:grid;
+      grid-template-rows:repeat(3,1fr);
+    }
+
+    .dropdown-mobile:hover #experience-mobile {
+      display:none;
+    }
+
+    .dropdown-mobile:hover #work-mobile {
+      grid-row:1;
+    }
+
+    .dropdown-mobile:hover #education-mobile {
+      grid-row:2;
+    }
+
+    .dropdown-mobile:hover #projects-mobile {
+      grid-row:3;
+    }
+
+    #home-mobile {
+      grid-row:2;
+    }
+    
+    #home-mobile:hover {
+      color:white;
+    }
+
+    #about-mobile {
+      grid-row:3;
+    }
+    
+    #about-mobile:hover {
+      color:white;
+    }
+    
+    #work-mobile:hover {
+      color:white;
+    }
+
+    #education-mobile:hover {
+      color:white;
+    }
+
+    #projects-mobile:hover {
+      color:white;
+    }
+
+
+}
+
+    
