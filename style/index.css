@@ -1,6 +1,7 @@
 * {
   overflow:hidden;
 }
+
 h1 {
   color:rgba(255,255,255,0.9);
   position:fixed;
@@ -9,20 +10,17 @@ h1 {
 		1px -1px 0 black,
 		-1px 1px 0 black,
 		1px 1px 0 black;
-  bottom:5%;
+  bottom:2%;
   left:3%;
-  margin-right:3%;
-  font-size:250%;
   font-family:"Kaushan Script";
   font-weight:normal;
 }
 
-main {
+.bg {
   background-image:url("../files/kayaking1.JPG");
   background-size:cover;
-  background-attachment:fixed;
   background-position:center;
-  overflow:hidden;
+  height: 100%;
 }
 
 @media only screen and (max-width: 700px) {
