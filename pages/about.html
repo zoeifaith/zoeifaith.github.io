@@ -2,79 +2,167 @@
 <html>
   <head>
     <title>Zoei Faith | About Me</title>
-    <link href="../style/main.css" type="text/css" rel="stylesheet">
-    <link href="../style/about.css" type="text/css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/icon" href="../title.ico">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Kaushan+Script|Open+Sans+Condensed:300|PT+Sans+Caption" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <!-- Custom Styling -->
+    <link href="../style/main.css" rel="stylesheet">
+    <link href="../style/about.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   </head>
-  <body>
-    <header>
-      <h2>Zoei Faith</h2>
-      <nav>
-        <div id="slide-btn" class="mobile">
-          <img id="menu-icon" src="../files/menu.png">
+  <body onload='typeWriter()'>
+  <nav id="firstPage">
+    <div  class="row px-3 py-1 align-items-center">
+      <div class="col">
+      <h2>ZOEI FAITH</h2>
+      </div>
+      <div class="col justify-content-right text-right">
+        <i  id="slide-btn" class="fas fa-bars fa-3x"></i>
+      </div> 
+    </div>
+    <div id="slide" class="container">
+      <div class="row m-2">
+        <a href="../index.html" id="home">HOME</a>
+      </div>
+      <div class="row m-2">
+        <a href="./about.html" id="about">ABOUT ME</a>
+      </div>
+      <div class="dropdown row m-2">
+        <a href="#" id="experience">MY EXPERIENCE</a>
+        <div class="dropContent container pl-4">
+          <div class="row my-2">
+            <a href="#" id="work">WORK</a>
+          </div>
+          <div class="row my-2">
+            <a href="./education.html" id="education">EDUCATION</a>
+          </div>
+          <div class="row my-2">
+            <a href="#" id="projects">PROJECTS</a>
+          </div>
         </div>
-          
-        <div id="slide" class="mobile">
-          <a href="../index.html" id="home-mobile">Home</a>
-          <a href="about.html" id="about-mobile">About Me</a>
-          <div class="dropdown-mobile">
-            <a href="#" id="experience-mobile">My Experience</a>
-            <div class="dropContent-mobile">
-              <a href="#" id="work-mobile">Work</a>
-              <a href="education.html" id="education-mobile">Education</a>
-              <a href="#" id="projects-mobile">Projects</a>
+        </div>
+        <div id="contact" class="container align-items-end">
+          <div class="row my-2 justify-content-center align-items-center">
+            <div id="email" class="col-6 p-2">
+              <i class="fas fa-envelope mr-1"></i>
+              <a href="mailto:faith@wisc.edu">faith@wisc.edu</a>
+            </div>
+            <div id="phone" class="col-6 p-2">
+              <i class="fas fa-phone mr-1"></i>
+              1(262)490-6455
+            </div>
+          </div>
+          <div id="extras" class="row justify-content-center mt-3">
+            <a href="https://github.com/zoeifaith" target="_blank"><i class="fab fa-github mr-4"></i></a>
+            <a href="https://www.linkedin.com/in/zoei-faith/" target="_blank"><i class="fab fa-linkedin ml-4"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container vh-100">
+      <div class="row py-5 h-25 justify-content-center">
+        <h2 id="text"></h2>
+      </div>
+      <div class="row #intro">
+        <div class="col-6 text-center">
+          <img src="../files/lapham-cropped.jpg" id="me" alt="A Picture of Zoei Faith at Lapham Peak in Delafield, Wisconsin">
+        </div>
+        <div class="col-6 p-5 text-center">
+          <p id="aboutMe">I am currently a fourth-year student at the University of Wisconsin-Madison, studying electrical engineering and computer science. I grew up in small town near Milwaukee, Wisconsin. I enjoy hiking, sports, and learning new things.</p>
+        </div>
+      </div>
+      <div class="row scrollpage-arrow align-items-end justify-content-center">
+        <a class="scrollLink" href="#secondPage"><i class="fas fa-chevron-down fa-3x"></i></a>
+      </div>
+    </div>
+    <div id="secondPage" class="container vh-100">
+      <div class="row scrollpage-arrow justify-content-center">
+        <a class="scrollLink" href="#firstPage"><i class="fas fa-chevron-up fa-3x"></i></a>
+      </div>
+      <div class="container scrollpage-content" id="facts">
+        <div class="row mt-3 mb-5 justify-content-center">
+          <h4 class="title">Fun Facts</h4>
+        </div>
+        <div class="row justify-content-center">
+          <ul>
+            <li>
+              <i class="fas fa-circle fa-xs"></i> I have 11 younger siblings (5 brothers and 6 sisters)
+            </li>
+            <li>
+              <i class="fas fa-circle fa-xs"></i> I've played soccer since I was 4 years old
+            </li>
+            <li>
+              <i class="fas fa-circle fa-xs"></i> I worked security at SuperBowl LII in Minneopolis, MN in February of 2018
+            </li>
+            <li>
+              <i class="fas fa-circle fa-xs"></i> I started college as a pre-business/psychology double major
+            </li>
+            <li>
+              <i class="fas fa-circle fa-xs"></i> I grew up in Oconomowoc, Wisconsin (prononced 'Oh-con-oh-mow-awe-k')
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row scrollpage-arrow align-items-end justify-content-center">
+        <a class="scrollLink" href="#thirdPage"><i class="fas fa-chevron-down fa-3x"></i></a>
+      </div>
+    </div>
+    <div id="thirdPage" class="container vh-100">
+      <div class="row scrollpage-arrow justify-content-center">
+        <a class="scrollLink" href="#secondPage"><i class="fas fa-chevron-up fa-3x"></i></a>
+      </div>
+      <div class="container scrollpage-content align-items-center">
+        <div class="row my-5 justify-content-center">
+          <h4 class="title">My Favorite Sports Teams</h4>
+        </div>
+        <div class="row">
+          <div class="col-6 col-lg-3">
+            <div class="row">
+              <h5 class="picName" id="mapleleafs">Toronto Maple Leafs<br><small>(NHL)</small></h5>
+            </div>
+            <div class="row" id="leafs">
+              <img src="../files/leafs.jpg" alt="Toronto Maple Leafs Hockey Team">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="row">
+              <h5 class="picName" id="badgers">Wisconsin Badgers<br><small>(NCAA Sports)</small></h5>
+            </div>
+            <div class="row" id="badge">
+              <img src="../files/camp.jpg" alt="Wisconsin Badger Athletics">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="row">
+              <h5 class="picName" id="packers">Green Bay Packers<br><small>(NFL)</small></h5>
+            </div>
+            <div class="row" id="pack">
+              <img src="../files/packers.jpg" alt="Green Bay Packers Football Team">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="row">
+             <h5 class="picName" id="barca">FC Barcelona<br><small>(UEFA)</small></h5>
+            </div>
+            <div class="row" id="messi">
+              <img src="../files/barca.jpeg" alt="FC Barcelona Soccer">
             </div>
           </div>
         </div>
-          
-        <a href="../index.html" id="home">Home</a>
-        <a href="about.html" id="about">About Me</a>
-        <div class="dropdown">
-          <a href="#" id="experience">My Experience</a>
-          <div class="dropContent">
-            <a href="#" id="work">Work</a>
-            <a href="education.html" id="education">Education</a>
-            <a href="#" id="projects">Projects</a>
-          </div>
-        </div>    
-      </nav>
-    </header>
-    <div id="firstPage">
-      <p id="aboutMe">I am currently a third-year student at the University of Wisconsin-Madison, studying electrical engineering and computer science. I grew up in small town near Milwaukee, Wisconsin. I enjoy hiking, sports, and learning new things.</p>
-      <p class="arrow down" style="grid-column:2"><a class="scrollLink" href="#secondPage">^</a></p>
+      </div>
     </div>
-    <div id="secondPage">
-      <p class="arrow" style="grid-row:1;grid-column:1/span 4;"><a class="scrollLink" href="#firstPage">^</a></p>
-      <h4 class="title">My Favorite Sports Teams</h4>
-      <h5 class="picName" id="mapleleafs">Toronto Maple Leafs<br>(NHL)</h5>
-      <div id="leafs">
-        <img src="../files/leafs.jpg" alt="Toronto Maple Leafs Hockey Team">
-      </div>
-      <h5 class="picName" id="badgers">Wisconsin Badgers<br>(NCAA Sports)</h5>
-      <div id="badge">
-        <img src="../files/camp.jpg" alt="Wisconsin Badger Athletics">
-      </div>
-      <h5 class="picName" id="packers">Green Bay Packers<br>(NFL)</h5>
-      <div id="pack">
-        <img src="../files/packers.jpg" alt="Green Bay Packers Football Team">
-      </div>
-      <h5 class="picName" id="barca">FC Barcelona<br>(UEFA Soccer)</h5>
-      <div id="messi">
-        <img src="../files/barca.jpeg" alt="FC Barcelona Soccer">
-      </div>
-      <p class="arrow down" style="grid-row:5;grid-column:1/span 4;"><a class="scrollLink" href="#thirdPage">^</a></p>
-    </div>
-    <div id="thirdPage">
-      <p class="arrow"><a class="scrollLink" href="#secondPage">^</a></p>
-    </div>
-    <footer>
-      <h3>Contact Me</h3>
-      <p id="email">Email: <a href="mailto:faith@wisc.edu" class="tabbed">faith@wisc.edu</a></p>
-      <p id="phone">Phone: <a <a href="tel:+12624906455" class="tabbed">1 (262) 490-6455</a></p>
-      <p id="linkedin"><a href="https://www.linkedin.com/in/zoei-faith-4021ab165/" target="_blank">Connect with me on LinkedIn!</a></p>
-    </footer>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+   <!-- Custom Scripts -->
   <script src="../files/functions.js"></script>
 </html>

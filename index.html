@@ -8,69 +8,62 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
-  <!--Custom Styling-->
+  <!-- Custom Styling -->
   <link href="./style/main.css" rel="stylesheet">
   <link href="./style/index.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 </head>
   <body>
-  <nav class="row px-3 py-1 align-items-center">
-    <div class="col">
+  <nav>
+    <div  class="row px-3 py-1 align-items-center">
+      <div class="col">
       <h2>ZOEI FAITH</h2>
-    </div>
-    <div class="col justify-content-right text-right">
-      <i  id="slide-btn" class="fas fa-bars fa-3x"></i>
-    </div> 
-  </nav>
-  <div id="slide" class="container">
-    <div class="row m-2">
-      <a href="index.html" id="home">HOME</a>
-    </div>
-    <div class="row m-2">
-      <a href="./pages/about.html" id="about">ABOUT ME</a>
-    </div>
-    <div class="dropdown row m-2">
-      <a href="#" id="experience">MY EXPERIENCE</a>
-      <div class="dropContent container pl-4">
-        <div class="row my-2">
-          <a href="#" id="work">WORK</a>
-        </div>
-        <div class="row my-2">
-          <a href="./pages/education.html" id="education">EDUCATION</a>
-        </div>
-        <div class="row my-2">
-          <a href="#" id="projects">PROJECTS</a>
-        </div>
       </div>
+      <div class="col justify-content-right text-right">
+        <i  id="slide-btn" class="fas fa-bars fa-3x"></i>
+      </div> 
+    </div>
+    <div id="slide" class="container">
+      <div class="row m-2">
+        <a href="index.html" id="home">HOME</a>
       </div>
-      <div id="contact" class="container align-items-end">
-        <div class="row my-2 justify-content-center align-items-center">
-          <div id="email" class="col-6 p-2">
-            <i class="fas fa-envelope mr-1"></i>
-            <a href="mailto:faith@wisc.edu">faith@wisc.edu</a>
+      <div class="row m-2">
+        <a href="./pages/about.html" id="about">ABOUT ME</a>
+      </div>
+      <div class="dropdown row m-2">
+        <a href="#" id="experience">MY EXPERIENCE</a>
+        <div class="dropContent container pl-4">
+          <div class="row my-2">
+            <a href="#" id="work">WORK</a>
           </div>
-          <div id="phone" class="col-6 p-2">
-            <i class="fas fa-phone mr-1"></i>
-            1(262)490-6455
+          <div class="row my-2">
+            <a href="./pages/education.html" id="education">EDUCATION</a>
+          </div>
+          <div class="row my-2">
+            <a href="#" id="projects">PROJECTS</a>
           </div>
         </div>
-        <div id="extras" class="row justify-content-center mt-3">
-          <a href="https://github.com/zoeifaith" target="_blank"><i class="fab fa-github mr-4"></i></a>
-          <a href="https://www.linkedin.com/in/zoei-faith/" target="_blank"><i class="fab fa-linkedin ml-4"></i></a>
+        </div>
+        <div id="contact" class="container align-items-end">
+          <div class="row my-2 justify-content-center align-items-center">
+            <div id="email" class="col-6 p-2">
+              <i class="fas fa-envelope mr-1"></i>
+              <a href="mailto:faith@wisc.edu">faith@wisc.edu</a>
+            </div>
+            <div id="phone" class="col-6 p-2">
+              <i class="fas fa-phone mr-1"></i>
+              1(262)490-6455
+            </div>
+          </div>
+          <div id="extras" class="row justify-content-center mt-3">
+            <a href="https://github.com/zoeifaith" target="_blank"><i class="fab fa-github mr-4"></i></a>
+            <a href="https://www.linkedin.com/in/zoei-faith/" target="_blank"><i class="fab fa-linkedin ml-4"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="bg"></div>
+    </nav>
     <h1>Welcome to my eResume!</h1>
   </body>
-  <script>
-    document.getElementById("slide-btn").addEventListener("mouseover", () => {
-      document.getElementById("slide").style.right = "0px";
-    });
-    document.getElementById("slide").addEventListener("mouseleave", () => {
-      document.getElementById("slide").style.right = "-300px";
-    });
-  </script>
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -79,5 +72,6 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+   <!-- Custom Scripts -->
   <script src="files/functions.js"></script>
 </html>

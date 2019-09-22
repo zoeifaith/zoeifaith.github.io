@@ -1,5 +1,8 @@
-* {
-  overflow:hidden;
+body {
+  background-image:url("../files/kayaking1.JPG");
+  background-size:cover;
+  background-position:center;
+  height: 100%;
 }
 
 h1 {
@@ -14,13 +17,6 @@ h1 {
   left:3%;
   font-family:"Kaushan Script";
   font-weight:normal;
-}
-
-.bg {
-  background-image:url("../files/kayaking1.JPG");
-  background-size:cover;
-  background-position:center;
-  height: 100%;
 }
 
 @media only screen and (max-width: 700px) {

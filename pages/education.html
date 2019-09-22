@@ -2,95 +2,160 @@
 <html>
   <head>
     <title>Zoei Faith | Academic History</title>
-    <link href="../style/main.css" type="text/css" rel="stylesheet">
-    <link href="../style/education.css" type="text/css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/icon" href="../title.ico">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Kaushan+Script|Open+Sans+Condensed:300|PT+Sans+Caption" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <!-- Custom Styling -->
+    <link href="../style/main.css" rel="stylesheet">
+    <link href="../style/education.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   </head>
   <body>
-    <header>
-      <h2>Zoei Faith</h2>
-      <nav>
-        <div id="slide-btn" class="mobile">
-          <img id="menu-icon" src="../files/menu.png">
+  <nav id="top">
+    <div  class="row px-3 py-1 align-items-center">
+      <div class="col">
+      <h2>ZOEI FAITH</h2>
+      </div>
+      <div class="col justify-content-right text-right">
+        <i  id="slide-btn" class="fas fa-bars fa-3x"></i>
+      </div> 
+    </div>
+    <div id="slide" class="container">
+      <div class="row m-2">
+        <a href="../index.html" id="home">HOME</a>
+      </div>
+      <div class="row m-2">
+        <a href="./about.html" id="about">ABOUT ME</a>
+      </div>
+      <div class="dropdown row m-2">
+        <a href="#" id="experience">MY EXPERIENCE</a>
+        <div class="dropContent container pl-4">
+          <div class="row my-2">
+            <a href="#" id="work">WORK</a>
+          </div>
+          <div class="row my-2">
+            <a href="./education.html" id="education">EDUCATION</a>
+          </div>
+          <div class="row my-2">
+            <a href="#" id="projects">PROJECTS</a>
+          </div>
         </div>
-          
-        <div id="slide" class="mobile">
-          <a href="../index.html" id="home-mobile">Home</a>
-          <a href="about.html" id="about-mobile">About Me</a>
-          <div class="dropdown-mobile">
-            <a href="#" id="experience-mobile">My Experience</a>
-            <div class="dropContent-mobile">
-              <a href="#" id="work-mobile">Work</a>
-              <a href="education.html" id="education-mobile">Education</a>
-              <a href="#" id="projects-mobile">Projects</a>
+        </div>
+        <div id="contact" class="container align-items-end">
+          <div class="row my-2 justify-content-center align-items-center">
+            <div id="email" class="col-6 p-2">
+              <i class="fas fa-envelope mr-1"></i>
+              <a href="mailto:faith@wisc.edu">faith@wisc.edu</a>
+            </div>
+            <div id="phone" class="col-6 p-2">
+              <i class="fas fa-phone mr-1"></i>
+              1(262)490-6455
             </div>
           </div>
-        </div>
-          
-        <a href="../index.html" id="home">Home</a>
-        <a href="about.html" id="about">About Me</a>
-        <div class="dropdown">
-          <a href="#" id="experience">My Experience</a>
-          <div class="dropContent">
-            <a href="#" id="work">Work</a>
-            <a href="education.html" id="education">Education</a>
-            <a href="#" id="projects">Projects</a>
+          <div id="extras" class="row justify-content-center mt-3">
+            <a href="https://github.com/zoeifaith" target="_blank"><i class="fab fa-github mr-4"></i></a>
+            <a href="https://www.linkedin.com/in/zoei-faith/" target="_blank"><i class="fab fa-linkedin ml-4"></i></a>
           </div>
-        </div>    
-      </nav>
-    </header>
-    <div id="top" class="picPage">
-      <div id="profile">
-        <img src="../files/lapham-cropped.jpg" id="me" alt="A Picture of Zoei Faith at Lapham Peak in Delafield, Wisconsin">
-        <p>Electrical Engineering and Computer Science<br>Third-Year Student<br></p>
+        </div>
       </div>
-      <a id="classLink" class="scrollLink" href="#content">Click to take a look at my course history</a>
+    </nav>
+    <div class="container vh-100">
+      <div class="row h-25 py-5 justify-content-center text-center">
+          <p class="lead">Bachelor of Science<br>Electrical Engineering and Computer Science<br>* Expected graduation May 2021 *</p>
+      </div>
+      <div class="row h-50 py-5 justify-content-center">
+        <img src="../files/uwlogo.png" alt="University of Wisconsin-Madison logo" id="uw">
+      </div>
+      <div class="row h-25 justify-content-center align-items-middle">
+        <a id="classLink" class="scrollLink" href="#content">Take a look at my course history</a>
+      </div>
     </div>
-    <main id="content">
-      <p class="arrow"><a class="scrollLink" href="#top">^</a></p>
-      <h4 id="ee">Engineering</h4>
-      <ul id="eclass" class="classList">
-        <li>ECE 352 - Digital System Fundamentals
-          <ul class="descriptor">
-            <li>Digital subsystems, computer organization, and design</li>
-            <li>Combinational, synchronous, and asynchronous sequential logic analysis</li>
-          </ul>
-        </li>
-        <li>ECE 551 - Digital System Design and Synthesis
-          <ul class="descriptor">
-            <li>Advanced design principles and relation of integrated circuit layout to timing-oriented design</li>
-            <li>Use of hardware description langages and automated synthesis in design</li>
-          </ul>
-        </li>
-      </ul>
-      <h4 id="cs">Computer Science</h4>
-      <ul id="csclass" class="classList">
-        <li>CS 354 - Machine Organization and Programming
-          <ul class="descriptor">
-            <li>Fundamental structures of computer systems, low-level interrelationships, and impacts on performance</li>
-          </ul>
-        </li>
-        <li>CS 367 - Data Structures
-          <ul class="descriptor">
-            <li>Development, implementation, and analysis of efficient data structures and algorithms</li>
-          </ul>
-        </li>
-        <li>CS 537 - Introduction to Operating Systems
-          <ul class="descriptor">
-            <li>Design and analysis of computer systems for real-time applications</li>
-            <li>Resource management, time-constrained communication, scheduling, and computations</li>
-          </ul>
-        </li>
-      </ul>
-    </main>
-    <footer>
-      <h3>Contact Me</h3>
-      <p id="email">Email: <a href="mailto:faith@wisc.edu" class="tabbed">faith@wisc.edu</a></p>
-      <p id="phone">Phone: <a <a href="tel:+12624906455" class="tabbed">1 (262) 490-6455</a></p>
-      <p id="linkedin"><a href="https://www.linkedin.com/in/zoei-faith-4021ab165/" target="_blank">Connect with me on LinkedIn!</a></p>
-    </footer>
+    <div id="content" class="container vh-100">
+      <div class="row justify-content-center">
+        <a class="scrollLink" href="#top"><i class="fas fa-chevron-up fa-3x"></i></a>
+      </div>
+      <div class="row h-75">
+        <div class="col-6">
+          <div class="row my-3 justify-content-center">
+            <h4 class="title">Engineering</h4>
+          </div>
+          <div class="row justify-content-center">
+            <ul>
+              <li>
+                <i class="fas fa-circle fa-xs"></i> ECE 352 - Digital System Fundamentals
+                <ul>
+                  <li>
+                    <i class="fas fa-minus fa-xs"></i> Digital subsystems, computer organization, and design
+                  </li>
+                  <li>
+                    <i class="fas fa-minus fa-xs"></i> Combinational, synchronous, and asynchronous sequential logic analysis
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <i class="fas fa-circle fa-xs"></i> ECE 551 - Digital System Design and Synthesis
+                <ul>
+                  <li>
+                    <i class="fas fa-minus fa-xs"></i> Advanced design principles and relation of integrated circuit layout to timing-oriented design
+                  </li>
+                  <li>
+                    <i class="fas fa-minus fa-xs"></i> Use of hardware description langages and automated synthesis in design
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row my-3 justify-content-center">
+            <h4 class="title">Computer Science</h4>
+          </div>
+          <div class="row justify-content-center">
+            <ul>
+              <li>
+                <i class="fas fa-circle fa-xs"></i> CS 354 - Machine Organization and Programming
+                <ul>
+                  <li>
+                    <i class="fas fa-minus fa-xs"></i> Fundamental structures of computer systems, low-level interrelationships, and impacts on performance
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <i class="fas fa-circle fa-xs"></i> CS 367 - Data Structures
+                <ul>
+                  <li>
+                    <i class="fas fa-minus fa-xs"></i> Development, implementation, and analysis of efficient data structures and algorithms
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <i class="fas fa-circle fa-xs"></i> CS 537 - Introduction to Operating Systems
+                <ul>
+                  <li>
+                    <i class="fas fa-minus fa-xs"></i> Design and analysis of computer systems for real-time applications
+                  </li>
+                  <li>
+                    <i class="fas fa-minus fa-xs"></i> Resource management, time-constrained communication, scheduling, and computations
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+  <!-- Custom Scripts -->
   <script src="../files/functions.js"></script>
 </html>
