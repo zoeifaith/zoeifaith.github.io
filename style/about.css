@@ -43,11 +43,25 @@ li:not(i) {
   padding:1%;
 }
 
-#intro {
-  height:60%;
-}
-
 #text {
   font-family:"Special Elite";
 }
 
+@media (max-width: 1000px) {
+  img:not(#me) {
+    height:100px;
+    width:150px;
+  }
+}
+
+@media (max-width: 750px) {
+  #me {
+    height: 225px;
+  }
+  #aboutMe {
+    font-size:100%;
+  }
+  li:not(i) {
+  font-size: 15px;
+  }
+}
