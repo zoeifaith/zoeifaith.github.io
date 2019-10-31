@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Zoei Faith</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
-  <!-- Custom Styling -->
-  <link href="./style/main.css" rel="stylesheet">
-  <link href="./style/index.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-</head>
+  <head>
+    <title>Zoei Faith | Work History</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <!-- Custom Styling -->
+    <link href="../style/main.css" rel="stylesheet">
+    <link href="../style/work.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  </head>
   <body>
-  <nav>
+  <nav id="top">
     <div  class="row px-3 py-1 align-items-center">
       <div class="col">
       <h2>ZOEI FAITH</h2>
@@ -25,10 +25,10 @@
     </div>
     <div id="slide" class="container">
       <div class="row m-2">
-        <a href="index.html" id="home">HOME</a>
+        <a href="../index.html" id="home">HOME</a>
       </div>
       <div class="row m-2">
-        <a href="./pages/about.html" id="about">ABOUT ME</a>
+        <a href="./about.html" id="about">ABOUT ME</a>
       </div>
       <div class="dropdown row m-2">
         <a href="#" id="experience">MY EXPERIENCE</a>
@@ -37,7 +37,7 @@
             <a href="./work.html" id="work">WORK</a>
           </div>
           <div class="row my-2">
-            <a href="./pages/education.html" id="education">EDUCATION</a>
+            <a href="./education.html" id="education">EDUCATION</a>
           </div>
           <div class="row my-2">
             <a href="#" id="projects">PROJECTS</a>
@@ -62,7 +62,21 @@
         </div>
       </div>
     </nav>
-    <h1>Welcome to my eResume!</h1>
+    <div class="container vh-100">
+      <div class="row h-25 py-5 align-items-top">
+        <div class="col-2 text-left">
+            <img src="../files/walogo.png" alt="Wisconsin Athletics logo" id="bucky">
+        </div>
+        <div class="col-10 col-lg-6 text-center align-content-center">
+            <p class="lead">Student Full Stack Developer<br>
+                Wisconsin Athletics Web, Mobile, Cloud Team</p>
+        </div>
+        <div class="col-4 text-right align-content-center" id="city">
+            <p>Madison, Wisconsin<br>
+               April 2019 - Present</p>
+        </div>
+      </div>
+    </div>
   </body>
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -72,6 +86,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
-   <!-- Custom Scripts -->
-  <script src="files/functions.js"></script>
+  <!-- Custom Scripts -->
+  <script src="../files/functions.js"></script>
 </html>
+

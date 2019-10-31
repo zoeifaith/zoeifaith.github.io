@@ -8,11 +8,11 @@ li:not(i) {
   font-size: 17px;
 }
 
-#uw {
-  height:150px;
+#bucky {
+  height:100px;
 }
 
-#classLink {
+#aboutLink {
   text-decoration:underline;
 }
 
@@ -21,10 +21,8 @@ li:not(i) {
 }
 
 @media (max-width: 1000px) {
-    .bullets {
+    #city {
         display: none;
     }
-    li {
-        padding-top:10%;
-    }
 }
+
