@@ -2,22 +2,24 @@ body {
   background-image:linear-gradient(to bottom,rgb(220,220,220),rgb(170,170,170));
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 li:not(i) {
   font-size: 17px;
 }
 
-#bucky {
-  height:100px;
+.grid-img {
+  max-height: 50px;
 }
 
-#aboutLink {
+#logo {
+  max-height:100px;
+  min-height: 50px;
+}
+
+#title {
   text-decoration:underline;
-}
-
-#content {
-  min-height: 1vh;
 }
 
 @media (max-width: 1000px) {
